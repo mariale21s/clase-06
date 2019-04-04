@@ -10,6 +10,10 @@ Para la próxima clase (4 de Abril) crear dos secciones de formulario (además d
 - Datos de mascotas
 - Información confidencial que quieras compartir
 
+## Clase
+
+[**`Ver clase (PDF)`**](clase-06.pdf)
+
 ## Video
 
 [**`Ver video`**](https://youtu.be/pBniN7vBZxQ)
