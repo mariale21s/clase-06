@@ -9,13 +9,23 @@
     <script src="main.js"></script>
     <style>
     titulo-de-formulario {
-        color: black;
+        color: greenyellow;
         background-color: purple;
         font-size: 24px;
         font-style: oblique
-        
-
+    }
+    formulario-datos-laborales {
+        color: greenyellow;
+        background-color: purple;
+        font-size: 24px;
+        font-style: oblique;
     }    
+    formulario-datos-financieros {
+        color: greenyellow;
+        background-color: purple;
+        font-size: 24px;
+        font-style: oblique;
+    }
     </style>
 
 </head>
@@ -33,6 +43,8 @@
             </ul>
         </nav>
         <!--Fin encabezado-->
+
+        <!--Contenido-->
        <form action="">  
             <fieldset>
                     <legend><titulo-de-formulario>Datos personales</titulo-de-formulario></legend>
@@ -55,8 +67,9 @@
                     <input id="edad" type="number" placeholder="Edad" />
                   
                     <!--Tipos de sangre-->
+                    <br>
                     <label for="tipo-de-sangre">Tipo de sangre</label>
-                    <div id="tipo-de-sangre">
+        
                     <label for="tipo-de-sangre-0">O</label>
                     <input id="tipo-de-sangre-0" name="tipo-de-sangre" type="radio" />
                     <label for="tipo-de-sangre-1">A</label>
@@ -65,7 +78,7 @@
                     <input id="tipo-de-sangre-2" name="tipo-de-sangre" type="radio" />
                     <label for="tipo-de-sangre-3">AB</label>
                     <input id="tipo-de-sangre-3" name="tipo-de-sangre" type="radio" />
-                    </div>
+                
                    
                     <!--Fin tipo de sangre-->
                     <label for="RH">RH</label>
@@ -87,17 +100,78 @@
                     <br>
                     <label for="TD">Tarjeta de credito</label>
                     <input id="TD" type="number" placeholder="Nro tarjeta de credito">
-                    
-            
-            
-        
-        
+                       
             </fieldset>
-        
+        </form>
+        <br>
+            <!--Datos laborales-->
+            <form action="">
+                <fieldset>
+                <legend><formulario-datos-laborales>Datos Laborales</formulario-datos-laborales></legend> 
+                <br>
+                <label for="EMP">Nombre de empresa</label>
+                <input id="EMP" type="text" placeholder="nombre de empresa" >
+                <br>
+                <label for="CUIT">CUIT</label>       
+                <input id="CUIT" type="number" placeholder="CUIT" >
+                <br>
+                <label for="direccion">Dirección de la empresa</label>
+                <input type="text" id="direccion" placeholder="dirección">
+                <br>
+                <label for="TLF">Número teléfonico</label>
+                <input id="TLF" type="number" placeholder="número telefónico">
+                <br>
+                <label for="FI">Fecha de Ingreso</label>
+                <input id="FI" type="date" placeholder="fecha de ingreso">
+                <br>
+                <label for="cargo">Cargo que ocupa</label>
+                <input id="cargo" type="text" placeholder="cargo">
+                <br>
+                <label for="supervisados">Cantidad de personal a su cargo</label>
+                <input id="supervisados" type="number" placeholder="personal a su cargo">
+                </fieldset>
+            </form>
+            <!--Fin datos laborales-->
+            <br>
+            <!--Datos financieros-->
+            <form action="">
+                <fieldset>
+                    <legend><formulario-datos-financieros>Información financiera</formulario-datos-financieros></legend>
+                    <br>
 
-        <!--Contenido-->
+                    <label for="SB">Sueldo bruto</label>
+                    <input id="SB" type="number" placeholder="sueldo bruto">
+                    <br>
+                    <label for="SN">Sueldo neto</label>
+                    <input id="SN" type="number" placeholder="sueldo neto">
+                    <br>
+                    <label for="OI">Otros ingresos</label>
+                    <input id="OI" type="number" placeholder="otros ingresos">
+                    <br>
+                    <label for="CF">Carga familiar</label>
+                    <input id="CF" type="number" placeholder="carga familiar">
+                    <br>
+                    <label for="TG">Gastos fijos (Arriendo, cuotas prestamos, etc...)</label>
+                    <input id="TG" type="number" placeholder="gasto fijo estimado">
+                    <br>
+                    <label for="GVE">Gastos variables (Alimentación, transporte, combustible, etc...)</label>
+                    <input id="GVE" type="number" placeholder="gasto variable estimado">
+                    <br>
+                    <label for="FCE">Fecha de cobro</label>
+                    <input id="FCE" type="date" placeholder="fecha de cobro">
+                    <br>
+                    <label for="CDA">¿Considera usted que tiene buena capacidad de ahorro?</label>
+                    <select name="capacidad-de-ahorro" id="CDA">
+                        <option value="">Su respuesta</option>
+                        <option value="SI">Si</option>
+                        <option value="NO">No</option>
+                        <option value="inseguro">No estoy seguro</option>
+                    </select>
+                </fieldset>
+            </form>
+            <!--Fin datos financieros-->
 
-        <!--Fin de contenido-->
+
 
 </body>
 </html>
